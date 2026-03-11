@@ -1,11 +1,14 @@
-import { Controller, Get } from "@nestjs/common";
-import { ListaClientesService } from "./lista.clientes.service";
+import { Controller, Get } from '@nestjs/common';
+import { ClientesService } from './lista.clientes.service';
 
-@Controller('lista-clientes')
-export class ListaClientesController {
-    constructor(private readonly listaClientesService: ListaClientesService){}
-@Get()
-listaClientes(): string {
-    return this.listaClientesService.listaClientes();
-}
+@Controller('clientes')
+export class ClientesController {
+
+  constructor(private clientesService: ClientesService) {}
+
+  @Get()
+  listarClientes() {
+    return this.clientesService.listarClientes();
+  }
+
 }
