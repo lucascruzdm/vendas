@@ -3,4 +3,5 @@ export interface Cliente {
   nome: string;
   telefone?: string | null;
   endereco?: string | null;
+  email?: string | null;
 }
