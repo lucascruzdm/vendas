@@ -1,10 +1,9 @@
 import { Module } from '@nestjs/common';
 import { HealthCheckModule } from './health-check/health-check.module';
-import { ListaClientesModule } from './lista.clientes/lista.clientes.module';
 import { ClientesModule } from './clientes/clientes.module';
 
 @Module({
-  imports: [HealthCheckModule,ListaClientesModule, ClientesModule],
+  imports: [HealthCheckModule, ClientesModule],
   controllers: [],
   providers: [],
 })
