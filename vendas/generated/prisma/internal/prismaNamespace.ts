@@ -521,7 +521,8 @@ export const ClienteScalarFieldEnum = {
   id: 'id',
   nome: 'nome',
   telefone: 'telefone',
-  endereco: 'endereco'
+  endereco: 'endereco',
+  email: 'email'
 } as const
 
 export type ClienteScalarFieldEnum = (typeof ClienteScalarFieldEnum)[keyof typeof ClienteScalarFieldEnum]
